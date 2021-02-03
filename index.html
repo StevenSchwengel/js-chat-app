@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>text</title>
+  </head>
+    <link rel="stylesheet" href="/styles/base.css">
+  <body>
+<div class="chat">
+</div>
+
+  <script id="users" type="text/x-handlebars-template">
+    {{#each chats}}
+    <p>{{this.text}}</p>
+    {{/each}}
+</script>
+
+
+  </body>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+   <script src="./scripts/main.js"></script>
+</html>

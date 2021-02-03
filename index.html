@@ -4,16 +4,28 @@
     <meta charset="utf-8">
     <title>text</title>
   </head>
-    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="styles/base.css">
   <body>
+
+
+
 <div class="chat">
 </div>
 
   <script id="users" type="text/x-handlebars-template">
     {{#each chats}}
+    <button type="modify">Modify!</button>
+    <p>{{this.id}}</p>
     <p>{{this.text}}</p>
+    <p>{{this.username}}</p>
+    <p>{{this.created_at}}</p>
+    <p><hr></p>
+
     {{/each}}
 </script>
+
+
+
 
 
   </body>

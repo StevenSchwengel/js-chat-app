@@ -21,10 +21,8 @@
 <input type="text" name="message">
 </span>
 <br>
-<input id="myBtn" type="Button" value="Send" onclick="newMessage()">
-  <!-- <div id="here"></div> -->
-
-</div>
+<input id="myBtn" type="Button" value="Send" onclick="nMessage()">
+<div id="here"></div>
 
 
 
@@ -35,6 +33,7 @@
   <script id="users" type="text/x-handlebars-template">
     {{#each chats}}
     <button type="modify">Modify!</button>
+    <button type="modify">Delete</button>
     <p>{{this.id}}</p>
     <p>{{this.text}}</p>
     <p>{{this.username}}</p>
